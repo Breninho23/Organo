@@ -4,6 +4,7 @@ import Formulario from "./componentes/Formulario";
 import Rodape from "./componentes/Rodape";
 import Time from "./componentes/Time";
 import {v4 as uuidv4} from 'uuid';
+import { Link } from "react-router-dom";
 
 function App() {
 
@@ -215,6 +216,7 @@ function App() {
 
   return (    
     <div>
+      <Link className="{styles.link}" to="/sobre">Sobre</Link>
       <Banner />
       <Formulario 
         cadastrarTime={cadastrarTime}
